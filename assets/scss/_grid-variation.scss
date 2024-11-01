@@ -1,0 +1,77 @@
+.woosc-template-#{$template-name} {
+  /*
+  * Template for Medium
+  */
+  &.woosc-medium-container {
+
+    .woosc-products-container {
+      .woosc-product {
+        max-width: 33.33%;
+        flex: 0 0 33.33%;
+      }
+    }
+
+  }
+
+  /*
+  * Template for Small
+  */
+  &.woosc-small-container {
+    .woosc-products-search {
+      padding: 30px 0;
+
+      .woosc-products-search-form {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+
+        .woosc-products-search-field {
+          padding: 5px;
+          width: 100%;
+        }
+
+      }
+
+    }
+
+    .woosc-products-container {
+      .woosc-product {
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+    }
+
+  }
+
+  /*
+  * Template for Extra Small
+  */
+  &.woosc-extra-small-container {
+    .woosc-products-search {
+      padding: 30px 0;
+
+      .woosc-products-search-form {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+
+        .woosc-products-search-field {
+          padding: 5px;
+          width: 100%;
+        }
+
+      }
+
+    }
+
+    .woosc-products-container {
+      .woosc-product {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,79 @@
+/*
+* Template for Medium
+*/
+.woosc-medium-container {
+
+  .woosc-products-lists-container {
+    display: block;
+
+    .woosc-product-list-item {
+      display: flex;
+      flex-wrap: wrap;
+
+      .woosc-product-item-col {
+        padding: 8px;
+        display: block;
+
+        &.woosc-product-short-description {
+          width: calc(100% - (216px + 76px));
+        }
+
+        &.woosc-product-cart-action {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+}
+
+/*
+* Template for Small
+*/
+.woosc-small-container {
+  .woosc-products-search {
+    padding: 30px 0;
+
+    .woosc-products-search-form {
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+
+      .woosc-products-search-field {
+        padding: 5px;
+        width: 100%;
+      }
+
+    }
+
+  }
+
+
+  .woosc-products-lists-container {
+    display: block;
+
+    .woosc-product-list-item {
+      display: flex;
+      flex-wrap: wrap;
+
+      .woosc-product-item-col {
+        padding: 10px;
+        display: block;
+
+        &.woosc-product-title {
+          width: calc(100% - 80px);
+        }
+
+        &.woosc-product-short-description {
+          width: calc(100%);
+        }
+
+        &.woosc-product-cart-action {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+}

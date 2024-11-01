@@ -1,0 +1,158 @@
+/*--------------------------------------------------------------------------------------
+   *********** Woot Swatch
+---------------------------------------------------------------------------------------*/
+
+.woot-modal {
+	transform: translate(-50%, -50%);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 360px;
+	max-width: 90%;
+	z-index: 159990;
+	background-color: #fcfcfc;
+}
+
+.woot-modal-container {
+	position: relative;
+	display: none;
+}
+
+
+.woot-modal input.error {
+	border-color: #DD3939;
+}
+
+.woot-modal-header,
+.woot-modal-content,
+.woot-modal-footer {
+	padding: 20px;
+}
+
+.woot-modal-header {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.woot-modal-content {
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	background-color: #ffffff;
+}
+
+.woot-modal-close{
+	text-decoration: none !important;	
+}
+
+.swatch-preview {
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-weight: 700;
+	border-radius: 23%;
+}
+
+.woot-modal-footer {
+	text-align: right;
+}
+
+.woot-modal-footer .message,
+.woot-modal-footer .spinner {
+	float: left;
+}
+
+.woot-modal-footer .message.error {
+	color: #DD3939;
+}
+
+.woot-modal-footer .message.success {
+	color: #46b450;
+}
+
+.woot-form-table {
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.07), 0 1px 1px rgba(0,0,0,.04);
+}
+
+.woot-form-table, .woot-form-table td, .woot-form-table td p, .woot-form-table th {
+    font-size: 14px;
+}
+
+.woot-form-table {
+    border-collapse: collapse;
+    margin-top: .5em;
+    width: 100%;
+    clear: both;
+}
+
+.woot-form-table tr {
+    border-bottom: 1px solid #eee;
+    display: block;
+}
+
+.woot-form-table th {
+    padding: 20px 10px 20px 20px;
+}
+
+.woot-form-table th {
+    vertical-align: top;
+    text-align: left;
+    padding: 20px 10px 20px 20px;
+    width: 200px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.woot-form-table th, .woot-form-wrap label {
+    color: #23282d;
+    font-weight: 600;
+    text-shadow: none;
+    vertical-align: baseline;
+}
+
+.woot-form-table td {
+    margin-bottom: 9px;
+    padding: 15px 10px;
+    line-height: 1.3;
+    vertical-align: middle;
+}
+
+.woot-form-table td img {
+
+    vertical-align: middle;
+}
+
+.woot-form-table td label, .woot-form-table td fieldset li, .woot-form-table td fieldset p {
+    line-height: 1.4em;
+}
+
+.woot-form-table td label {
+    margin: .25em 0 .5em!important;
+    display: inline-block;
+	  vertical-align: middle;
+	  padding-left:20px;
+	  color: #9c9a9a;
+	  font-style: italic;
+}
+
+.woot-term-image-thumbnail{
+	float:left;
+	margin-right:10px;
+}
+
+.woot-add-remove-image {
+	line-height:60px;
+}
+
+.woot-img{
+	width:60px;
+	height: 60px;
+}
+
+.woot-option-buttons {
+	display:inline-block;
+}
+

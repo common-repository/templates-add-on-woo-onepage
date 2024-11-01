@@ -1,0 +1,72 @@
+.woosc-template-#{$template-name} {
+  /*
+  * Template for Medium
+  */
+  &.woosc-medium-container {
+
+
+  }
+
+  /*
+  * Template for Small
+  */
+  &.woosc-small-container, &.woosc-extra-small-container {
+    .woosc-products-search {
+      padding: 30px 0;
+
+      .woosc-products-search-form {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+
+        .woosc-products-search-field {
+          padding: 5px;
+          width: 100%;
+        }
+
+      }
+
+    }
+
+
+    .woosc-products-container {
+      display: block;
+
+      .woosc-product {
+        display: flex;
+        flex-wrap: wrap;
+
+        .woosc-product-item-col {
+          padding: 10px;
+          display: block;
+          flex: 0 0 100%;
+
+          &.woosc-product-thumbnail {
+
+            img {
+              max-width: 100px;
+              height: auto;
+            }
+          }
+
+          &.woosc-product-cart-action {
+            & > div {
+              display: flex;
+              justify-content: end;
+              align-items: baseline;
+
+              & > div {
+                &:nth-child(2) {
+                  margin-left: 10px;
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

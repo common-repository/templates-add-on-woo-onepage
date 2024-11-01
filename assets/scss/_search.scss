@@ -1,0 +1,79 @@
+/***
+**Product Search
+*****/
+.woosc-products-search {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 10px 20px 20px 20px !important;
+  position: relative;
+  @extend %product-search-branding;
+
+  &:before, &:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 20px;
+    left: 20px;
+    width: 50%;
+    top: 40px;
+    max-width: 400px;
+    background: 0 0;
+    box-shadow: 0 15px 13px #333;
+    transform: rotate(-2deg);
+  }
+
+  &:after {
+    transform: rotate(2deg);
+    right: 20px;
+    left: auto;
+  }
+
+  .woosc-products-search-form {
+    display: flex;
+    align-items: flex-end;
+
+    .woosc-products-search-field {
+      padding: 5px;
+      width: 100%;
+
+      label {
+        font-weight: bolder !important;
+        text-transform: uppercase;
+      }
+
+      input[type="text"], select {
+        display: block;
+        width: 100%;
+        margin: 0 !important;
+        height: 35px;
+        outline: none;
+        border: 1px solid #F5F5F5;
+        border-radius: 2px;
+        color: #444;
+      }
+
+      .chosen-container-single {
+        width: 100% !important;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        height: 35px;
+        line-height: 20px;
+        padding: 8px;
+        text-align: center;
+        border-radius: 2px;
+        border: none;
+        @extend %product-item-branding;
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+

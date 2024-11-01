@@ -1,0 +1,314 @@
+/*--------------------------------------------------------------------------------------
+    *********** Woot Swatch
+---------------------------------------------------------------------------------------*/
+
+.woot_error_validation {
+    color: #D8000C;
+    border-top: 2px #D8000C solid;
+    background-color: #fbeaea;
+    padding: 10px !important;
+    position: relative;
+    display: inline-block !important;
+    margin-top: 10px;
+
+
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.woot-swatches {
+
+}
+
+.woot-swatches .swatch {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    display: inline-block;
+    min-width: 30px;
+    min-height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 5px 5px 0;
+    padding: 0 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    position: relative;
+    opacity: 0.5;
+}
+
+.woot-swatches .swatch.selected {
+
+    border: 2px solid #0e0a0a;
+    opacity: 1;
+}
+
+.woot-swatches .swatch.disabled {
+    opacity: 0.1;
+
+}
+
+.woot-swatches .swatch-color {
+    text-indent: -9999px;
+    border: 2px solid #ccc;
+
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+    display: inline-block;
+    background-position: center center;
+    vertical-align: middle;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+
+    border-radius: 0;
+
+    padding: 2px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    transition: border 0.4s;
+}
+
+.woot-swatches .swatch-color.selected {
+    border-color: #333;
+}
+
+.woot-swatches .swatch-color.selected:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: "";
+    width: 6px;
+    height: 10px;
+    display: block;
+    border: solid #eee;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    top: 8px;
+    left: 11px;
+}
+
+.woot-swatches .swatch-label {
+    background-color: #f1f1f1;
+}
+
+form .selector-wrapper {
+    display: block !important;
+}
+
+.woot-swatches {
+    display: inline-block;
+}
+
+.woot-swatches * {
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    line-height: 1;
+}
+
+.woot-swatches > .swatchColor,
+.woot-swatches > .swatchColor > div {
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    border-radius: 0px;
+    border: 0px;
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+    display: inline-block;
+    background-position: center center;
+    vertical-align: middle;
+}
+
+.woot-swatches > .swatchColor {
+    cursor: pointer;
+    margin: 3px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.4s;
+}
+
+.woot-swatches > .swatchColor > div {
+    border-radius: inherit;
+}
+
+.woot-swatches > .swatchColor.selected {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+}
+
+.woot-swatches > .swatchColor > .wootTooltip {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s, margin-top 0.4s;
+    width: 200px;
+    margin-left: -87px;
+    /* -100 + 13 */
+    margin-top: -10px;
+    text-align: center;
+    z-index: 100;
+}
+
+.woot-swatches > .swatchColor:hover > .wootTooltip {
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.woot-swatches > .swatchColor > .wootTooltip > span:first-child {
+    top: -5px;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+}
+
+.woot-swatches > .swatchColor > .wootTooltip > .innerText {
+    background: #000000;
+    border-radius: 3px;
+    padding: 3px 5px;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+}
+
+/* swatch label */
+
+
+.woot-swatches > .swatch > .wootTooltip {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s, margin-top 0.4s;
+    width: 200px;
+    margin-left: -87px;
+    /* -100 + 13 */
+    margin-top: -10px;
+    text-align: center;
+    z-index: 100;
+}
+
+.woot-swatches > .swatch:hover > .wootTooltip {
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.woot-swatches > .swatch > .wootTooltip > span:first-child {
+    top: -5px;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+}
+
+.woot-swatches > .swatch > .wootTooltip > .innerText {
+    background: #000000;
+    border-radius: 3px;
+    padding: 3px 5px;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+}
+
+.woot-swatches > .swatchColor.swatchType_two_colors > div {
+    transform: rotate(0deg);
+}
+
+.woot-swatches > .swatchColor.swatchType_two_colors > div > div:first-child {
+    transform-origin: 100% 50%;
+}
+
+.woot-swatches > .swatchColor.swatchType_two_colors > div > div:last-child {
+    transform-origin: 0% 50%;
+}
+
+.woot-swatches > .swatchColor.swatchType_two_colors > div > div {
+    width: 13px;
+    transform: rotate(90deg);
+    height: 26px;
+    display: inline-block;
+}
+
+.woot-swatches + .selecter-selected {
+    display: none;
+}
+
+.selecter {
+    outline: none;
+    z-index: initial;
+}
+
+.product-form__item .single-option-selector__label {
+    position: static;
+}
+
+
+.swatch_options {
+    display: none;
+}
+
+.form-options > .form-field-select-wrapper > .woot-swatches {
+    margin-top: 40px;
+}
+
+.form-options > .form-field-select-wrapper > .woot-swatches + label + svg,
+.product-variant.selector-wrapper > .regular-select-cover > .woot-swatches + .regular-select-inner,
+.product-variant.selector-wrapper > .regular-select-cover > .woot-swatches + .regular-select-inner + svg,
+.product-variant.selector-wrapper > .regular-select-cover > label[for="product-color"] + .regular-select-cover > .regular-select-inner,
+.product-variant.selector-wrapper > .regular-select-cover > label[for="product-color"] + .regular-select-cover > svg {
+    display: none !important;
+}
+
+.woot-swatches > .swatchColor {
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    transition: border 0.4s;
+}
+
+.woot-swatches > .swatchColor.selected {
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    box-shadow: none;
+}
+
+.textImage {
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* hide global select option */
+.woocommerce div.product form.cart .variations select {
+    display: none;
+}
